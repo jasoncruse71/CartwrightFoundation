@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	  The CartWright Foundation
+      Author: Jason Cruse 
+      Date: 18/3/2023  
+
+      Filename: front_page.html  
+     -->
+
+	 <meta charset = "utf-8" />
+	 <title>The Cartwright Foundation</title>
+	 <meta name = "viewport" content = "width = device-width", initial-scale = "1" />
+	 <link href = "css/front_page.css" rel= "stylesheet" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header> 
+		<img class="dropimg" src = "img/img_02.png" />
+			<nav class="dropdown">
+				<ul class = "dropmenu" >
+    				<li><a href = "front_page.html">Home</a></li>
+					<li><a href = "about_us.html">About Us</a></li>
+					<li><a href = "resources.html">Resources</a></li>
+					<li><a href = "donate.html">Donate</a></li>
+					<li><a href = "contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="container" />
+				<img src = "img/img_06.jpg" />
+				<div class = "overlay"><div class="textcontainer"/><h1>Welcome to the Cartwright Foundation</h1></div></div>	
+	    	</div>
+	 </header>
+
+	<article>
+		<div class = "textcontainer purple"> 
+		<h1>
+			Donate
+		</h1>
+			<p>Your donation can help us educate more teenagers and parents about the risks and consequences of substance abuse, and provide them with the tools and resources they need to make healthy choices and seek help if they or someone they know is struggling with addiction.</p>
+
+			<p>With your support, we can continue to develop and promote programs that empower teenagers to make informed decisions about their health and wellbeing, and work towards creating a world where all young people have access to the resources and support they need to overcome addiction and achieve their full potential.</p>
+
+			<p>To make a donation, please fill out the form provided below, and hit the submit button.</p>
+		</div>
+
+		<div class = "textcontainer green">
+		  	<form class = "donate" action="#"  method="post">
+		   	  <label for="title">Title</label>
+		   	  <input name="title" id="titleBox" type="text" list="titleList" placeholder="Please select title..."/>
+		   	  	<datalist id="titleList">
+					<option value="Mr."/>
+					<option value="Mrs."/>
+					<option value="Ms."/>
+					<option value="Prof."/>
+					<option value="Dr."/>
+					<option value="Assist."/>
+					<option value="Assoc."/>
+				</datalist>
+		   	  <label for="firstName">First Name*</label>
+		   	  <input name="firstName" id="fnBox" type="text" placeholder="Please enter first name..." required="required"/>
+		   	  <label for="lastName">Last Name*</label>
+		   	  <input name="lastName" id="lnBox" type="text" placeholder="Please enter first name..." required="required"/> 
+		   	  <label for="address">Address*</label>
+		   	  <input name="address" id="addBox" type="text" placeholder="Please enter last name..." required="required"/>
+		   	  <label for="email">E-mail*</label>
+		   	  <input name="email" id="mailBox" type="email" placeholder="Please enter email..." required="required"/> 
+		   	  <label for="phoneNumber">Phone Number*</label>
+		   	  <input name="phoneNumber" id="phoneBox" type="tel" required="required" placeholder="(•••) _ _ _ - _ _ _ _" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+			  <p>
+				<input value="Submit" type="submit" onlcick="myFunction()">
+			  </p>
+			  <script>
+			  		function myFunction() {
+			  			alert("Form is now submitted");
+			  		}
+			  </script>
+  	  		</form> 
+  		</div>
+	</article>
+
+	<footer>
+		<div id = "footerBox">
+			<p>@Cartwright Founation 2023</p>
+			<div class = "smicons">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
